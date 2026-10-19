@@ -55,9 +55,18 @@ genvm-lint check cycleclear.py
 
 The mock tests cover three-party closure, six-party batch optimization, atomic disjoint locks, owner authorization, expiry, edge replay, forged leader verdicts, and malformed judgments. A separate GenLayer `gltest` direct-mode check exercised real SDK storage and validator callbacks. The pinned SDK passed semantic validation. These local checks do not establish live consensus or finality.
 
-## Submission evidence
+## Live StudioNet proof
 
-Before submission, supply a public source commit and byte-identical deployed source, an Explorer address, finalized successful transactions for the demo and guard failures, read-backs, and a release manifest. No Portal submission should claim these until they exist. See [SUBMISSION.md](SUBMISSION.md) for the evidence checklist and draft Portal fields.
+Deployed on StudioNet (chain 61999) at [CycleClear's Explorer address](https://explorer-studio.genlayer.com/address/0x38cf54f97D5621cAfD374C08776d59A1f7F4E176). The [deployment](https://explorer-studio.genlayer.com/tx/0xb815980727298021557f46a14c91c82afd37229beebe5aa3363b1f2d37edf2f4) and [batch clear](https://explorer-studio.genlayer.com/tx/0x63d9aa332a55a5b3dea538033747f51812a2e78976587744c4f58a07589c8c8a) finalized with leader `return` and validator majority agreement. The three guard transactions finalized with leader `rollback`. The contract read-back is batch `[1,2]`, cycles `[0,3,4]` and `[1,2,5]`, and six locked listings. All eight judged edges read back as `MATCH`.
+
+The exact deployed Python bytes have SHA-256 `60fbef0c415dfc4ac0896fb83ca84d41ba9d532d77db3db6ae58dcd98996afa6`, matching the committed source. [proof_manifest.json](proof_manifest.json) contains all 19 finalized transaction IDs, participants, edge list, and read-backs. Run [verify_studionet.py](verify_studionet.py) with `genlayer-py==0.16.3` to independently recheck transaction status, leader result, deployed bytes, and latest finalized state:
+
+```sh
+pip install genlayer-py==0.16.3
+python verify_studionet.py
+```
+
+See [SUBMISSION.md](SUBMISSION.md) for copy-ready Portal fields. The source repository is currently private; make it public only after owner review, then submit the public source link and evidence to the Portal.
 
 ## Official references
 

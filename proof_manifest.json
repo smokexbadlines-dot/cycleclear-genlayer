@@ -1,0 +1,347 @@
+{
+  "project": "CycleClear",
+  "network": "studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://explorer-studio.genlayer.com/address/0x38cf54f97D5621cAfD374C08776d59A1f7F4E176",
+  "contract": "0x38cf54f97D5621cAfD374C08776d59A1f7F4E176",
+  "source_repository": "https://github.com/smokexbadlines-dot/cycleclear-genlayer",
+  "source_commit": "96ceebf40de030c73482fd8aaaff8465a89494cc",
+  "source_file": "cycleclear.py",
+  "source_sha256": "60fbef0c415dfc4ac0896fb83ca84d41ba9d532d77db3db6ae58dcd98996afa6",
+  "deployed_source_sha256": "60fbef0c415dfc4ac0896fb83ca84d41ba9d532d77db3db6ae58dcd98996afa6",
+  "participants": [
+    "0x1fB6FD9cA9cD2ccb32252660Ed67704c25Cf1531",
+    "0x54D3f096C91c2E6B23A5b85184fbCAA1c77b5afa",
+    "0x4110e075DC54f13C0A601606bc9DA9C7F6d0AAcc",
+    "0xAAaddD617303Dff10de695D4DB08D102B5DfBC15",
+    "0x8371a76847902A590E38844cfb2d64BEF0cc57E8",
+    "0xaE5983F0a2f964034eb42A7480B3c2cd17A8DaE0"
+  ],
+  "approved_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      5,
+      1
+    ]
+  ],
+  "transactions": [
+    {
+      "kind": "deploy",
+      "tx_id": "0xb815980727298021557f46a14c91c82afd37229beebe5aa3363b1f2d37edf2f4",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": "0x38cf54f97D5621cAfD374C08776d59A1f7F4E176"
+    },
+    {
+      "kind": "post",
+      "index": 0,
+      "tx_id": "0xdb41b18b337d5586bad21606dc71b4c5efee02e6b7ffe12c92a35b5e6a9f8903",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "post",
+      "index": 1,
+      "tx_id": "0x9c4eab61a29fcc7ee5bf192f6f9032f27ae77440e59e2f34c2b44447e9149bc3",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "post",
+      "index": 2,
+      "tx_id": "0x9648c73af66f6d2be2052aa97c39170a33e5d59a22f1be9c2a48866a8eaf8676",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "post",
+      "index": 3,
+      "tx_id": "0x24a98493122a9a57eecf8f7151ed3ef8d5be934d3ac0a4d24596184d227b4476",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "post",
+      "index": 4,
+      "tx_id": "0x86828be58a4af82a80871462a721e855b87e0b47908736f3610b0d9f4bb260d6",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "post",
+      "index": 5,
+      "tx_id": "0x68610441209042fa66ed2e72b5a5353d9bf5c8f8ce4fd4506d621d6b3076c6fd",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "premature_clear",
+      "args": [],
+      "signer": 0,
+      "tx_id": "0xddc4e0abe957f7dcdcffb05e9eef7aee3b7b97ab2220599c1f99e428626a67f1",
+      "status": "FINALIZED",
+      "leader_status": "rollback",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "unauthorized_cancel",
+      "args": [
+        0
+      ],
+      "signer": 1,
+      "tx_id": "0xa3d4593fc29fec8cad8b42c1e76eeab1b71b495d900ee69b98f51dd6ddb93977",
+      "status": "FINALIZED",
+      "leader_status": "rollback",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_0_1",
+      "args": [
+        0,
+        1
+      ],
+      "signer": 0,
+      "tx_id": "0x325a19433d56e4055d7ff36f04cd22fceb5d7cc8c6821a5daebc83abeeb6942a",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_1_2",
+      "args": [
+        1,
+        2
+      ],
+      "signer": 0,
+      "tx_id": "0xd8513b45178e743f3e235f7998eb98f56c6afcd6c52a13be09e96d294daead29",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_2_0",
+      "args": [
+        2,
+        0
+      ],
+      "signer": 0,
+      "tx_id": "0xae1311450652244c041195969ae15b19143e951477b34f41e1429df017e7d66b",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_0_3",
+      "args": [
+        0,
+        3
+      ],
+      "signer": 0,
+      "tx_id": "0x3df5171bdebb4266b839335186d4dc03598cd2356d6aad5fa1fce73a7fdd9cf2",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_3_4",
+      "args": [
+        3,
+        4
+      ],
+      "signer": 0,
+      "tx_id": "0xa23702a32fc0114da8488a40dfcb6717d6ed9418eea54831a5f5db06c25385a7",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_4_0",
+      "args": [
+        4,
+        0
+      ],
+      "signer": 0,
+      "tx_id": "0x797509baf0211c390fa2b58aa35c4fb0126662ad21470c942bd2fcdab79d4111",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_2_5",
+      "args": [
+        2,
+        5
+      ],
+      "signer": 0,
+      "tx_id": "0x991b612c4c98739ba2f3153a608bfa323aba4a3772dea89358b1f66f139297b6",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_5_1",
+      "args": [
+        5,
+        1
+      ],
+      "signer": 0,
+      "tx_id": "0x15319f44b2897440c7d331a930183a3ae0279b5879fd5c54b888607c592606f4",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "edge_replay",
+      "args": [
+        0,
+        1
+      ],
+      "signer": 0,
+      "tx_id": "0x55da67f74991a7be841a501c577c2fcdb4fb908842050e48ad514594a4037cc4",
+      "status": "FINALIZED",
+      "leader_status": "rollback",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    },
+    {
+      "kind": "clear_batch",
+      "args": [],
+      "signer": 0,
+      "tx_id": "0x63d9aa332a55a5b3dea538033747f51812a2e78976587744c4f58a07589c8c8a",
+      "status": "FINALIZED",
+      "leader_status": "return",
+      "result": "MAJORITY_AGREE",
+      "contract_address": null
+    }
+  ],
+  "readbacks": {
+    "batch": [
+      1,
+      2
+    ],
+    "cycles": [
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        5
+      ]
+    ],
+    "listings": [
+      {
+        "cycle_id": 1,
+        "expires_at": 1793035394,
+        "id": 0,
+        "need": "WCAG accessibility checklist for my one-page website",
+        "offer": "Create an editable SVG flyer for a local event",
+        "owner": "0x1fB6FD9cA9cD2ccb32252660Ed67704c25Cf1531",
+        "state": 1
+      },
+      {
+        "cycle_id": 2,
+        "expires_at": 1793035444,
+        "id": 1,
+        "need": "Editable SVG event flyer",
+        "offer": "Record English voiceover up to 30 seconds",
+        "owner": "0x54D3f096C91c2E6B23A5b85184fbCAA1c77b5afa",
+        "state": 1
+      },
+      {
+        "cycle_id": 2,
+        "expires_at": 1793035488,
+        "id": 2,
+        "need": "English narration no longer than half a minute",
+        "offer": "Review a one-page website against WCAG and provide a checklist",
+        "owner": "0x4110e075DC54f13C0A601606bc9DA9C7F6d0AAcc",
+        "state": 1
+      },
+      {
+        "cycle_id": 1,
+        "expires_at": 1793035531,
+        "id": 3,
+        "need": "Editable SVG flyer for a local event",
+        "offer": "Translate up to 200 English words into Spanish",
+        "owner": "0xAAaddD617303Dff10de695D4DB08D102B5DfBC15",
+        "state": 1
+      },
+      {
+        "cycle_id": 1,
+        "expires_at": 1793035574,
+        "id": 4,
+        "need": "Spanish translation of at most 200 English words",
+        "offer": "Provide a WCAG accessibility checklist for a one-page website",
+        "owner": "0x8371a76847902A590E38844cfb2d64BEF0cc57E8",
+        "state": 1
+      },
+      {
+        "cycle_id": 2,
+        "expires_at": 1793035617,
+        "id": 5,
+        "need": "Accessibility review with WCAG checklist for a one-page site",
+        "offer": "Design an editable SVG event flyer",
+        "owner": "0xaE5983F0a2f964034eb42A7480B3c2cd17A8DaE0",
+        "state": 1
+      }
+    ]
+  },
+  "expected_guard_state_before_clear": {
+    "batch_count": 0,
+    "listing_0_state": 0
+  },
+  "note": "Guard transactions finalized with leader rollback; successful transactions finalized with leader return."
+}
