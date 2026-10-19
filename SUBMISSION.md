@@ -18,7 +18,7 @@
 
 ## Evidence links
 
-1. Source: [CycleClear repository](https://github.com/smokexbadlines-dot/cycleclear-genlayer), deployment source commit `96ceebf40de030c73482fd8aaaff8465a89494cc`. The repo is currently private. Contract SHA-256: `60fbef0c415dfc4ac0896fb83ca84d41ba9d532d77db3db6ae58dcd98996afa6`; the deployed bytes match.
+1. Source: [public CycleClear repository](https://github.com/smokexbadlines-dot/cycleclear-genlayer), deployment source commit `96ceebf40de030c73482fd8aaaff8465a89494cc`. Contract SHA-256: `60fbef0c415dfc4ac0896fb83ca84d41ba9d532d77db3db6ae58dcd98996afa6`; the deployed bytes match.
 2. StudioNet (chain 61999): [contract address](https://explorer-studio.genlayer.com/address/0x38cf54f97D5621cAfD374C08776d59A1f7F4E176), `0x38cf54f97D5621cAfD374C08776d59A1f7F4E176`.
 3. Finalized successful [deployment](https://explorer-studio.genlayer.com/tx/0xb815980727298021557f46a14c91c82afd37229beebe5aa3363b1f2d37edf2f4) and [batch clear](https://explorer-studio.genlayer.com/tx/0x63d9aa332a55a5b3dea538033747f51812a2e78976587744c4f58a07589c8c8a). Both have leader `return` and majority agreement.
 4. Six posts, eight `MATCH` judgments, and three guard rollbacks are recorded with finalized transaction IDs in [proof_manifest.json](proof_manifest.json). The guard cases are premature clear, unauthorized cancel, and judged-edge replay.
@@ -30,6 +30,6 @@
 | --- | --- | --- |
 | Technical | Source validates against pinned SDK, local checks pass, live demo clears | PASS |
 | Distinctiveness | Batch optimization is a real mechanism change from SkillLoop | Technical PASS; reviewer judgment pending |
-| Evidence | Finalized live traces, byte-identical source, read-backs, public repository | Live proof PASS; public repository pending |
+| Evidence | Finalized live traces, byte-identical source, read-backs, public repository | PASS |
 
-The owner reviews the packet, approves publication of the private repository, and submits the public source and evidence links to the Portal. Repository visibility and Portal submission require the owner's explicit approval.
+The owner reviews this packet and submits the public source and evidence links to the Portal. Portal submission is reserved for the owner.

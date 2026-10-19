@@ -66,7 +66,7 @@ pip install genlayer-py==0.16.3
 python verify_studionet.py
 ```
 
-See [SUBMISSION.md](SUBMISSION.md) for copy-ready Portal fields. The source repository is currently private; make it public only after owner review, then submit the public source link and evidence to the Portal.
+See [SUBMISSION.md](SUBMISSION.md) for copy-ready Portal fields. The [public source repository](https://github.com/smokexbadlines-dot/cycleclear-genlayer) and live evidence can be submitted to the Portal after owner review.
 
 ## Official references
 
